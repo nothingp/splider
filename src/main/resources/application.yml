@@ -1,0 +1,26 @@
+spring.profiles:
+    active: test
+
+server:
+    port: 9090
+
+spring.datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://112.74.26.133:3306/gupiao?userSSL=false&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    username: xxx
+    password: xxxxx
+
+spring.jpa:
+    hibernate.ddl-auto: none
+    show-sql: true
+    
+flyway:
+    enabled: false
+    baselineOnMigrate: true
+    table: _sql_version
+    sqlMigrationSeparator: '#'
+
+retrofit.http:
+    baseURL: http://xxxx.nothing.com
+    user: admin
+    password: xxxx
