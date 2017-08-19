@@ -6,17 +6,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 @Data
-public class StockProp {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    protected String id;
+public class StockPropQuery implements Serializable {
 
     protected String code;
-
-    protected String type;
 
     protected String name;
 
@@ -24,7 +23,5 @@ public class StockProp {
 
     protected String month;
 
-    protected String prop;
-
-    protected Double value;
+    protected Map<String,Double> items = new HashMap<>();
 }

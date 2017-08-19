@@ -6,9 +6,9 @@ server:
 
 spring.datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://112.74.26.133:3306/gupiao?userSSL=false&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
-    username: xxx
-    password: xxxxx
+    url: jdbc:mysql://120.76.160.175:3306/gupiao?userSSL=false&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    username: zjd_admin
+    password: judy84711
 
 spring.jpa:
     hibernate.ddl-auto: none
