@@ -53,7 +53,7 @@ dependencies {
 
 task buildDocker(type: Docker, dependsOn: build) {
     push = false
-    applicationName = 'registry.cn-shenzhen.aliyuncs.com/nothing/splider'
+    applicationName = 'registry-internal.cn-shenzhen.aliyuncs.com/nothing/splider'
     dockerfile = file('src/main/docker/Dockerfile')
 
     doFirst {
