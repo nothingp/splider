@@ -8,5 +8,5 @@ RUN apk update && apk add curl bash tree tzdata \
 
 ADD *.jar app.jar
 
-ENV JAVA_OPTS="-server -Xms1024m -Xmx1024m -XX:SurvivorRatio=2 -XX:+PrintClassHistogram -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintHeapAtGC -Xloggc:gc.log"
+ENV JAVA_OPTS="-server -Xms256m -Xmx256m -XX:SurvivorRatio=2 -XX:+PrintClassHistogram -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintHeapAtGC -Xloggc:gc.log"
 ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -jar /app.jar --spring.profiles.active=$ACTIVE " ]
