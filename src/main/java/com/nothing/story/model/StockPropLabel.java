@@ -28,6 +28,7 @@ public class StockPropLabel implements Serializable {
 
     protected String parentId;
 
-    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy="parentId")
+//    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy="parentId")
+    @Transient
     protected List<StockPropLabel> children = new ArrayList<>();
 }

@@ -156,6 +156,9 @@ public class StockService implements CommandMarker {
 
     public List<StockPropLabel> findTree(){
         List<StockPropLabel> list = stockPropLabelRepository.findByParentId("-1");
+        list.forEach(stockPropLabel -> {
+            stockPropLabel.setChildren(stockPropLabelRepository.findByParentId(stockPropLabel.getId()));
+        });
         return list;
     }
 
