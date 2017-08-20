@@ -3,7 +3,7 @@ buildscript {
 		springBootVersion = '1.5.3.RELEASE'
 	}
 	repositories {
-		maven { url "http://nexus.team.nothing.com/repository/maven-public" }
+		maven { url "http://nexus.team.fengchaoli.com/repository/maven-public" }
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
@@ -20,7 +20,7 @@ apply plugin: 'docker'
 sourceCompatibility = 1.8
 
 repositories {
-	maven { url "http://nexus.team.nothing.com/repository/maven-public" }
+	maven { url "http://nexus.team.fengchaoli.com/repository/maven-public" }
 }
 
 
